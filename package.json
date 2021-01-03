@@ -4,12 +4,12 @@
   "version": "0.0.1",
   "scripts": {
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
-		"build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
-		"build-dev:tailwind": "postcss static/tailwind.css -o static/index.css",
-		"dev": "npm run build-dev:tailwind && sapper dev",
-		"build": "npm run build:tailwind && sapper build",
-		"export": "sapper export --legacy",
-		"start": "node __sapper__/build",
+    "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
+    "build-dev:tailwind": "postcss static/tailwind.css -o static/index.css",
+    "dev": "npm run build-dev:tailwind && sapper dev",
+    "build": "npm run build:tailwind && sapper build",
+    "export": "sapper export --legacy",
+    "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "@types/compression": "^1.7.0",
     "@types/node": "^14.11.1",
     "@types/polka": "^0.5.1",
+    "autoprefixer": "^10.1.0",
     "cssnano": "^4.1.10",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
